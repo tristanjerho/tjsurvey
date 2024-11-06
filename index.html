@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css"> 
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <p>I love to hear your feedback!</p>
+
+        <form id="survey-form">
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            
+            <label for="age">Age (optional):</label>
+            <input type="number" id="age" name="age" min="1" max="120">
+
+            
+            <label for="role">Which option best describes you?</label>
+            <select id="role" name="role">
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+
+            
+            <label>How satisfied are you with our service?</label>
+            <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
+            <label for="very-satisfied">Very Satisfied</label>
+
+            <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+            <label for="satisfied">Satisfied</label>
+
+            <input type="radio" id="neutral" name="satisfaction" value="neutral">
+            <label for="neutral">Neutral</label>
+
+            
+            <label for="comments">Other  Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+        
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
